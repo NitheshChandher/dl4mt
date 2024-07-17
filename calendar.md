@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Calendar
+title: Lab Lessons
 description: Listing of course modules and topics.
 ---
 
-# Calendar
+# Lab Lessons
 
 {% for module in site.modules %}
 {{ module }}
