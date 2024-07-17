@@ -1,0 +1,27 @@
+---
+title: "Deep Learning for Media Technology"
+---
+
+## About Lab Lessons
+
+The lab session introduces fundamental concepts in deep learning tools such as Python, Keras, and others necessary for completing required 
+lab assignments. Each week, the session begins with a brief lecture on a key module essential for that week's assignment. This is followed 
+by practical exercises where you apply the module in a Python notebook file.
+
+## Schedule
+
+The schedule for Lab Lessons are given below
+
+* **Lesson 1 - Introduction to Keras**: 17 November 2023 (08:15 - 10:00)
+* **Lesson 2 - Introduction to CNN**: 24 November 2023 (08:15 - 10:00)
+* **Lesson 3 - Implementing Transfer Learning in Keras**: 01 December 2023 (08:15 - 10:00)
+
+Each lesson will start at 08:15 and end at 10:00. 
+
+## Exercise:
+
+You can find the materials for the exercises here:
+
+1. Introduction to Keras: [Slide](Exercise/Exercise1/TNM112_17NOV.pdf), [Notebook](Exercise/Exercise1/Lesson_17_Nov.ipynb)
+2. Introduction to CNN: [Slide](Exercise/Exercise2/TNM112_24NOV.pptx), [Notebook](Exercise/Exercise2/Lesson_24_Nov.ipynb)
+3. Implementing Transfer Learning in Keras: [Slide](Exercise/Exercise3/TNM112_08DEC.pdf), [Notebook](Exercise/Exercise3/Lesson_08_Dec.ipynb)

@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "TNMxxx"
+  search: true
+  navbar:
+    background: primary
+    left:
+      - text: "Exercise"
+        menu:
+          - Exercise/Exercise1/index.qmd
+          - Exercise/Exercise2/index.qmd
+          - Exercise/Exercise3/index.qmd	   
+      - url: project/index.qmd
+    tools:
+      - icon: github
+        href: https://github.com/NitheshChandher/dl4mt
+
+format:
+  html:
+    theme:
+      - cosmo
+      - _custom.scss
+    toc: true
+    linestretch: 1.6
+    highlight-style: github
