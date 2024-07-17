@@ -1,6 +1,6 @@
 ---
 name: Gabriel Eilertsen
-role: Course Instructor
+role: Instructor
 email: 
 website: 
 photo: 
