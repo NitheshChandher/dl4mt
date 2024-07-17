@@ -2,14 +2,10 @@
 title: Introduction to Java
 ---
 
+### Materials - [Slides](_exercise/TNM112_17NOV.pdf), [Notebook](_exercise/Lesson_17_Nov.ipynb)
+
 ### Python
 
 ### Keras
 
 ### Matplotlib 
-
-### Materials
-
-[Slides](_exercise/TNM112_17NOV.pdf)
-[Notebook](_exercise/Lesson_17_Nov.ipynb)
-
