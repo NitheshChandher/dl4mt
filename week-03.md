@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 1
+title: Module 3
 description: >-
     Week 3 materials and Information
 ---
