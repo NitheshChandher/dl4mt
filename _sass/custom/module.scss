@@ -1,7 +1,7 @@
 .main-content .module,
 .module {
-  @extend %card;
-
+  // Remove the @extend %card; to remove card-like styling
+  // @extend %card;
   h1,
   h2,
   h3,
@@ -14,8 +14,9 @@
   }
 
   >dl {
-    border-bottom: $border $border-color;
-    border-top: $border $border-color;
+    // Remove border properties to eliminate the box
+    // border-bottom: $border $border-color;
+    // border-top: $border $border-color;
     display: grid;
     grid-template-columns: max-content 1fr;
     margin: $sp-2 (-$sp-4);
@@ -43,19 +44,21 @@
 
     >dt {
       @extend %module-item;
-      border-top: $border $border-color;
+      // Remove border properties to eliminate the box
+      // border-top: $border $border-color;
       font-weight: normal;
       text-align: right;
 
       +dd {
-        border-top: $border $border-color;
+        // Remove border properties to eliminate the box
+        // border-top: $border $border-color;
       }
 
       &:first-child {
-        border-top: none;
+        // border-top: none;
 
         +dd {
-          border-top: none;
+          // border-top: none;
         }
       }
 
