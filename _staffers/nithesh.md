@@ -3,6 +3,6 @@ name: Nithesh Chandher Karthikeyan
 role: Teaching Assistant
 email: nithesh.chandher.karthikeyan@liu.se
 website: https://nitheshchandher.github.io/
-photo: nithesh.jpg
+photo: dp.png
 ---
 PhD Student in Generative Models for Synthetic Imaging

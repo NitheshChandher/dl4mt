@@ -1,7 +1,20 @@
 ---
-title: Introduction to Convolutional Neural Network
+layout: page
+title: Module 2
+description: >-
+    Week 2 Materials and information
 ---
 
+# Week 2 - Training a CNN using Keras
+{:.no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 ### Training a CNN using Keras
 
 ### How to avoid Overfitting?
