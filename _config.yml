@@ -48,11 +48,6 @@ defaults:
       width: 300
   - scope:
       path: ''
-      type: modules
-    values:
-      layout: module
-  - scope:
-      path: ''
       type: schedules
     values:
       layout: schedule
