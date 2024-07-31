@@ -5,4 +5,4 @@ email: nithesh.chandher.karthikeyan@liu.se
 website: https://nitheshchandher.github.io/
 photo: dp.png
 ---
-PhD Student in Generative Models for Synthetic Imaging
+PhD Student
