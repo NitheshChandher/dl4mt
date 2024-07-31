@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Teaching Assistants
+title: Contact
 description: A listing of all the course staff members.
 ---
 
 ## Instructors
 
-{% assign instructors = site.staffers | where: 'role', 'Instructor' %}
+{% assign instructors = site.staffers | where: 'role', 'Course Instructor' %}
 {% for staffer in instructors %}
 {{ staffer }}
 {% endfor %}
@@ -14,6 +14,7 @@ description: A listing of all the course staff members.
 {% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
 {% assign num_teaching_assistants = teaching_assistants | size %}
 {% if num_teaching_assistants != 0 %}
+
 ## Teaching Assistants
 
 {% for staffer in teaching_assistants %}
