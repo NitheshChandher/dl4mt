@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 3
+title: Week 3
 description: >-
     Week 3 materials and Information
 ---
@@ -18,4 +18,6 @@ description: >-
 
 ### About Transfer Learning
 
-### Materials: [Slides](_exercise/exercise3/TNM112_01DEC.pdf)
+### Download: 
+
+[[Slides](_exercise/exercise3/TNM112_01DEC.pdf)]

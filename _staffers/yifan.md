@@ -1,7 +1,7 @@
 ---
 name: Yifan Ding
 role: Teaching Assistant
-email: nithesh.chandher.karthikeyan@liu.se
+email: xyz@liu.se
 website: https://nitheshchandher.github.io/
 photo: dp.png
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 2
+title: Week 2
 description: >-
     Week 2 Materials and information
 ---
@@ -19,4 +19,6 @@ description: >-
 
 ### How to avoid Overfitting?
 
-### Materials: [Slides](_exercise/exercise2/TNM112_24NOV.pptx), [Notebook](_exercise/exercise2/Lesson_24_Nov.ipynb)
+### Download
+ 
+[[Slides](week-02/TNM112_24NOV.pptx)], [[Notebook](week-02/Lesson_24_Nov.ipynb)]

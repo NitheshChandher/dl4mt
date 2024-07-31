@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 1
+title: Week 1
 description: >-
     Week 1 materials and Information
 ---
@@ -23,4 +23,6 @@ description: >-
 
 ### Matplotlib 
 
-### Materials - [Slides](_exercise/exercise1/TNM112_17NOV.pdf), [Notebook](_exercise/exercise1/Lesson_17_Nov.ipynb)
+### Download 
+
+[[Slides](week-01/TNM112_17NOV.pdf)], [[Notebook](week-01/Lesson_17_Nov.ipynb)]
