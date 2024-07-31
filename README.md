@@ -8,7 +8,7 @@ seo:
   name: TNMxxx
 ---
 
-# TNMxxx - Deep Learning for Media Technology
+# Deep Learning for Media Technology
 
 ## Lab Lessons
 
