@@ -2,7 +2,7 @@
 name: Yifan Ding
 role: Teaching Assistant
 email: xyz@liu.se
-website: https://nitheshchandher.github.io/
+website: -
 photo: dp.png
 ---
 PhD Student
