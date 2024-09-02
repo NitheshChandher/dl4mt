@@ -19,7 +19,11 @@ description: >-
 
 For the first lab session, we will explore the various components necessary to implement and train machine learning models. We expect everyone to have basic programming experience in Python, as the lab assignments and lessons will be conducted in Python. If you do not have prior experience, there are numerous introductory Python videos available online, and we are here to help if you need further assistance.
 
-In the lab assignments and lessons, you will work with a Python notebook file (.ipynb) and will need a machine with GPU support to train the models. If you have a personal computer with GPU support, you can install CUDA drivers to run the deep learning framework. However, the most convenient solution for everyone is to use `Google Colab` for running your notebook files, as it saves installation and setup time. To use Colab, go to this [link](https://colab.research.google.com/), create a new notebook file, or upload an existing one. Don't forget to sign in to your google account. You are now ready to run your assignments.
+## Setting up Google Colab
+
+In the lab assignments and lessons, you will work with a Python notebook file (.ipynb) and will need a machine with GPU support to train the models. If you have a personal computer with GPU support, you can install CUDA drivers to run the deep learning framework. However, the most convenient solution for everyone is to use `Google Colab` for running your notebook files, as it saves installation and setup time. To use Colab, go to this [link](https://colab.research.google.com/), create a new notebook file, or upload an existing one. Don't forget to sign in to your google account. You are now ready to run your assignments. You can also check out the following video on how to setup a notebook file in Google colab.
+
+[![Setup Google Colab](https://i3.ytimg.com/vi/RLYoEyIHL6A/maxresdefault.jpg)](https://www.youtube.com/watch?v=RLYoEyIHL6A)
 
 
 ### Numpy
