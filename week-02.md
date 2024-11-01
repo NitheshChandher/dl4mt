@@ -15,14 +15,15 @@ In this teaching session, we will build on our learning from the `lab00`(`Introd
 ### Task 1: Define a Single Neuron
 
 In this task,  we’ll create a single neuron that takes 4 input features [x1, x2, x3, x4] and produces a single output value.
+
 ![Neuron](/img/neuron.png)
 
 ```math
-                                    Z = X W^\intercal + B =\begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w1 & w2 & w3 & w4 \end{bmatrix}^\intercal + [b1],
+Z = X W^\intercal + B =\begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w1 & w2 & w3 & w4 \end{bmatrix}^\intercal + [b1],
 ```
 
 ```math
-                                    output = relu(Z)
+output = relu(Z)
 ```                             
 
 
@@ -77,7 +78,7 @@ $$
 $$
 
 
-<img src="img/neuron2.png" alt="neuron2" width="400"/>
+![Neuron2](/img/neuron2.png)
 
 **Note:**
 In my setup, W  has dimensions [N x M] and X  has dimensions [L x M], where:
@@ -124,7 +125,7 @@ print("Output:", output)
 
 Previously, we explored how to create a layer with multiple neurons. Now, let’s build a simple neural network as illustrated in the figure below:
 
-<img src="img/nn.png" alt="nn" width="700"/>
+![Nn](/img/nn.png)
 
 Write your implementation on the computations performed at each layer, as defined by the equations below:
 #### Layer 1:
