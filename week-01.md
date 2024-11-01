@@ -2,7 +2,7 @@
 layout: page
 title: ML Basics
 description: >-
-    Week 1 materials and Information
+    ML Basics materials and Information
 ---
 
 # Machine Learning Basics
@@ -15,7 +15,7 @@ description: >-
 {:toc}
 
 ---
-### Machine Learning Basics
+## Machine Learning Basics
 
 For the first lab session, we will explore the various components necessary to implement and train machine learning models. We expect everyone to have basic programming experience in Python, as the lab assignments and lessons will be conducted in Python. If you do not have prior experience, there are numerous introductory Python videos available online, and we are here to help if you need further assistance.
 
@@ -43,7 +43,3 @@ In the lab assignments and lessons, you will work with a Python notebook file (.
 As our deep learning framework, we will use [Keras](https://keras.io/getting_started/). You can find more information about how to use keras in their official [documentation](https://keras.io/api/layers/), and we will go through some of them during the lab lesson. However, for a quick introduction, check out the following video on basics of deep learning using Keras.   
 
 [![Deep Learning using Keras](https://i.ytimg.com/vi/wQ8BIBpya2k/maxresdefault.jpg)](https://youtu.be/wQ8BIBpya2k?list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN)
-
-### Download 
-
-[[Slides](week-01/TNM112_17NOV.pdf)], [[Notebook](week-01/Lesson_17_Nov.ipynb)]
