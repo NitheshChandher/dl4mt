@@ -15,15 +15,15 @@ In this teaching session, we will build on our learning from the `lab00`(`Introd
 ### Task 1: Define a Single Neuron
 
 In this task,  we’ll create a single neuron that takes 4 input features [x1, x2, x3, x4] and produces a single output value.
-<img src="img/neuron.png" alt="neuron" width="400"/>
+![Neuron](/img/neuron.png)
 
-$$
+```math
                                     Z = X W^\intercal + B =\begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w1 & w2 & w3 & w4 \end{bmatrix}^\intercal + [b1],
-$$ 
+```
 
-$$ 
+```math
                                     output = relu(Z)
-$$                              
+```                             
 
 
 ```python
