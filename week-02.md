@@ -18,13 +18,13 @@ In this task,  we’ll create a single neuron that takes 4 input features [x1, x
 
 ![Neuron](/img/neuron.png)
 
-\[
-Z = X W^\intercal + B = \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \end{bmatrix} \begin{bmatrix} w_1 & w_2 & w_3 & w_4 \end{bmatrix}^\intercal + [b_1],
-\]
+$$
+                                    Z = X W^\intercal + B =\begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w1 & w2 & w3 & w4 \end{bmatrix}^\intercal + [b1],
+$$ 
 
-\[
-output = \text{relu}(Z)
-\]
+$$ 
+                                    output = relu(Z)
+$$                              
 
 ```python
 np.random.seed(4)
