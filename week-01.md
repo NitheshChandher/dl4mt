@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Week 1
+title: ML Basics
 description: >-
     Week 1 materials and Information
 ---
 
-# Week 1 - Machine Learning Basics
+# Machine Learning Basics
 {:.no_toc}
 
 ## Table of contents
