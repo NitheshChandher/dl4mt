@@ -17,9 +17,11 @@ In this teaching session, we will build on our learning from the `lab00`(`Introd
 ### Task 1: Define a Single Neuron
 
 In this task,  we’ll create a single neuron that takes 4 features [x1, x2, x3, x4] as input and produces a single output value.
+
+
 ![Neuron](/img/neuron.png)
 
-$Implement the above neuron in the next cell. Follow the equations given below to compute the value of Z, followed by the output of the neuron through ReLU activation function.
+Implement the above neuron in the next cell. Follow the equations given below to compute the value of Z, followed by the output of the neuron through ReLU activation function.
 
 $$
                                     Z = X W^\intercal + B =\begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w1 & w2 & w3 & w4 \end{bmatrix}^\intercal + [b1],
@@ -63,11 +65,14 @@ print("Z:", Z)
 print("Output:", output)
 ```
 
+
 ### Task 2: Add another Neuron
 Now, let's add one more neuron to this layer. 
+
 ![Neuron2](/img/neuron2.png)
 
 Implement the above layer of neuron in the next cell by following the equations given below. Rather than performing the calculations separately, we’ll concatenate the weights of the second neuron into the same weight matrix W as shown below:
+
 
 $$
                                     Z = X W^\intercal + B = \begin{bmatrix} x1 & x2 & x3 & x4 \end{bmatrix} \begin{bmatrix} w11 & w21 & w31 & w41 \\ w12 & w22 & w32 & w42\end{bmatrix}^\intercal + \begin{bmatrix}b1 & b2\end{bmatrix},
@@ -77,6 +82,7 @@ $$
                                     output = relu(Z)
 $$
 
+
 **Note:**
 In my setup, W  has dimensions [N x M] and X  has dimensions [L x M], where:
 
@@ -84,7 +90,7 @@ In my setup, W  has dimensions [N x M] and X  has dimensions [L x M], where:
 - M is the number of input features for the layer,
 - L is the dataset length or number of inputs.
 
-Given these shapes, the calculation of z will be $$ X W^\intercal + B $$. Some textbooks, however, may represent this calculation as $$W X + B$$. Ultimately, it’s still a matrix multiplication, so just ensure the matrix dimensions are aligned accordingly.
+Given these shapes, the calculation of $$ Z $$ will be $$ X W^\intercal + B $$. Some textbooks, however, may represent this calculation as $$W X + B$$. Ultimately, it’s still a matrix multiplication, so just ensure the matrix dimensions are aligned accordingly.
 
 
 ```python
@@ -108,6 +114,7 @@ print("Bias Term:", B)
 print("Z:", Z)
 print("Output:", output)
 ```
+
 
 ### Task 3: Build a Neural Network
 
@@ -198,6 +205,7 @@ output = network.forward(X)
 print("Output:", output)
 ```
 
+
 ### Task 4 Dataset Creation
 
 Let us create a dataset suitable for training the neural network described above. We will generate the dataset similarly to what was done in `lab00`. Follow the steps outlined below:
@@ -264,6 +272,7 @@ dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 print(f'Number of Input Data: {len(dataset)}\nNumber of Batches: {len(dataloader)}')
 ```
 
+
 ### Task 5: Batch Computation
 
 From `task 1` to `task 3`, we have worked with the neural network using a single input `[1 x 4]` vector. Now, let's see if it can handle a batch of input vectors `[b.s x 4]`, where b.s is batch size (32 in this instance). 
@@ -284,6 +293,7 @@ output = network.forward(first_batch_data)
 print("Output:", output.shape)
 ```
 
+
 ### Task 6: Backpropagation
 
 The `backward()` calculates the gradients of the loss function with respect to the weights and biases using backpropagation.
@@ -295,7 +305,7 @@ $$
 dZ_3 = (\text{output} - y_{\text{true}}) \cdot \sigma'(Z_3)
 $$
 
-where $y_{\text{true}}$ is the true label and $\sigma'(z)$ is the derivative of the sigmoid function:
+where $$y_{\text{true}}$$ is the true label and $$\sigma'(z)$$ is the derivative of the sigmoid function:
 
 $$\sigma'(z) = \sigma(z) \cdot (1 - \sigma(z))$$
 
@@ -312,7 +322,7 @@ $$dA_2 = dZ_3 W_3^T$$
 
 $$dZ_2 = dA_2 \cdot \text{ReLU}'(Z_2)$$
 
-where $\text{ReLU}'(z)$ is defined as:
+where $$\text{ReLU}'(z)$$ is defined as:
 
 $$\text{ReLU}'(z) = 
 \begin{cases} 
@@ -351,7 +361,7 @@ $$B_2 \leftarrow B_2 - \eta dB_2$$
 $$W_1 \leftarrow W_1 - \eta dW_1$$
 $$B_1 \leftarrow B_1 - \eta dB_1$$
 
-where $\eta$ is the learning rate.
+where $$\eta$$ is the learning rate.
 
 
 ```python
@@ -431,7 +441,6 @@ class SimpleNeuralNetwork:
 
 ```
 
-
 ```python
 np.random.seed(4)
 
@@ -455,10 +464,10 @@ for batch_idx, (data, labels) in enumerate(dataloader):
         print(f"Batch {batch_idx + 1} - Loss: {loss}\n")
         
         # Backward pass and update weights
-        model.backward(labels)
-    
+        model.backward(labels) 
         
 ```
+
 
 ### Task 7: Training (Optional)
 
