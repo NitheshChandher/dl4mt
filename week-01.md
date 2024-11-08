@@ -1,11 +1,11 @@
 ---
 layout: page
-title: ML Basics
+title: Getting Started to ML
 description: >-
     ML Basics materials and Information
 ---
 
-# Machine Learning Basics
+# Getting Started to ML
 {:.no_toc}
 
 ## Table of contents
@@ -15,7 +15,7 @@ description: >-
 {:toc}
 
 ---
-## Machine Learning Basics
+## Getting Started to ML
 
 For the first lab session, we will explore the various components necessary to implement and train machine learning models. We expect everyone to have basic programming experience in Python, as the lab assignments and lessons will be conducted in Python. If you do not have prior experience, there are numerous introductory Python videos available online, and we are here to help if you need further assistance.
 
