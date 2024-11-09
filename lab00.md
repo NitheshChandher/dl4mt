@@ -14,9 +14,9 @@ description: >-
 
 Please note that this is not intended to be a comprehensive introduction to Python, which is outside the scope of this course. Rather, it provides a brief introduction for familiarizing yourself with the functionality needed for the labs. We will be using some of the resources from the official Python/NumPy/Matlplotlib tutorials, as well as some additional information from the documentation of, e.g., NumPy. If you want to dive a bit deeper, you can read all the different topics of the tutorials.
 
-* Python: https://docs.python.org/3/tutorial/index.html  
-* NumPy: https://numpy.org/devdocs/user/absolute_beginners.html
-* Matplotlib: https://matplotlib.org/stable/tutorials/pyplot.html
+* [Python](https://docs.python.org/3/tutorial/index.html)  
+* [NumPy](https://numpy.org/devdocs/user/absolute_beginners.html)
+* [Matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
 
 ## 1. Python basics
 
