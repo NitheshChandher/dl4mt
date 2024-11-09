@@ -9,7 +9,7 @@ description: >-
 {:.no_toc}
 
 ---
-[Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/230px-Python-logo-notext.svg.png)
+![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/230px-Python-logo-notext.svg.png)
 # Introduction to Python
 
 Please note that this is not intended to be a comprehensive introduction to Python, which is outside the scope of this course. Rather, it provides a brief introduction for familiarizing yourself with the functionality needed for the labs. We will be using some of the resources from the official Python/NumPy/Matlplotlib tutorials, as well as some additional information from the documentation of, e.g., NumPy. If you want to dive a bit deeper, you can read all the different topics of the tutorials.
@@ -154,6 +154,7 @@ Print the shape of the vector:
 
 Transpose the matrix and print the shape:  
 `(1, 8)`
+
 $$
 \begin{bmatrix}
 1 \\
@@ -170,13 +171,16 @@ $$
 $$
 
 Reshape this 1x8 matrix to a 2x4 matrix and print your output:
+
 $$
 M = \begin{bmatrix}
 1 & 2 & 3 & 4\\
 5 & 6 & 7 & 8
 \end{bmatrix}
 $$
-Transposing the matrix $M$, you will get a matrix $N$:
+
+Transposing the matrix $$M$$, you will get a matrix $$N$$:
+
 $$
 N = M^\intercal = \begin{bmatrix}
 1 & 5 \\
@@ -185,7 +189,9 @@ N = M^\intercal = \begin{bmatrix}
 4 & 8 \\
 \end{bmatrix}
 $$
-Perform the [matrix multiplication](https://numpy.org/devdocs/reference/generated/numpy.matmul.html) between the two arrays, $M$ and $N$:
+
+Perform the [matrix multiplication](https://numpy.org/devdocs/reference/generated/numpy.matmul.html) between the two arrays, $$M$$ and $$N$$:
+
 $$
 MN = \begin{bmatrix}
 1 & 2 & 3 & 4\\
@@ -202,7 +208,7 @@ MN = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-Reshape the 2x4 matrix $M$ to a 2x2x2 [Tensor](https://towardsdatascience.com/what-is-a-tensor-in-deep-learning-6dedd95d6507) and print your output.
+Reshape the 2x4 matrix $$M$$ to a 2x2x2 [Tensor](https://towardsdatascience.com/what-is-a-tensor-in-deep-learning-6dedd95d6507) and print your output.
 How does this 3 dimensional Tensor look like? Copy your output [here](https://array-3d-viz.vercel.app/) to visualize it. How about Tensors with 4 or more dimensions?
 
 Generate a NumPy array with 500 random numbers, using a normal distribution with mean = 1 and standard deviation = 0.5. You can use the NumPy [random normal generator](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html). Print the shape of the array:  
@@ -259,7 +265,7 @@ Use NumPy to generate a sinusoidal between x=0 and x=10, with 100 uniform sampli
 Define a second array by adding some normally distributed noise to your sinusoidal (mean = 0, std = 0.2).
 
 Plot the sinusoidal as a line and the noisy sinusoidal as individual points. Your result should look something like this:  
-[sin](img/sin.png)
+![sin](img/sin.png)
 
 
 ```python
@@ -283,19 +289,19 @@ plt.show()
 
 ### 2.3. Generating a dataset
 
-Create an array with 200 2D points, i.e. a $200\times2$ array, normally distributed with mean=1 and std=0.1. Print the shape of the array:  
+Create an array with 200 2D points, i.e. a $$200 x 2$$ array, normally distributed with mean=1 and std=0.1. Print the shape of the array:  
 `(200, 2)`
 
 Plot the 2D points, i.e. plotting the first dimension against the second:  
-[2d_1](img/2d_1.png)
+![2d_1](img/2d_1.png)
 
 Create a second array in the same way, but using mean=0.5:  
 
-[2d_2](img/2d_2.png)
+![2d_2](img/2d_2.png)
 
 Concatenate both arrays into a dataset array `x`. Create another 1D array, `y`, with labels describing which cluster/class the points belong to, 0 for the first and 1 for the second. You will now have a data array with shape `(400, 2)` and a label array with shape `(400,)`.  
 Plot the points and use the labels to apply separate colors and legends (for example, you can index the points of the first class as `x[y==0,:]` and plot each class separately by doing the same for the different classes):  
-[2d_3](img/2d_3.png)
+![2d_3](img/2d_3.png)
 
 
 ```python
@@ -336,10 +342,10 @@ plt.show()
 
 Generalize the dataset generation into a function `generate(K, N, sigma)` that creates a 2D point dataset with of  K different clusters with N points each. The points in each cluster should be normally distributed with std=sigma. Define different mean for the clusters, for example sampled uniformly between 0 to 1 (or you can come up with some other scheme for defining K different mean values).
 
-Write another function for plotting, `plot_data(x, y)`, which plots the dataset x using the labels y, similar to in the previous exercise. You can also pass the number of classes, K, to facilitate the plotting of different classes, i.e. using the function definition `plot_data(x, y, K)`. However, you can also calculate K directly from the label array y (see, e.g., the [NumPy function `unique`](https://numpy.org/devdocs/reference/generated/numpy.unique.html), or since you know that the labels are between 0 to K-1, you can use $K = \max(y)+1$).
+Write another function for plotting, `plot_data(x, y)`, which plots the dataset x using the labels y, similar to in the previous exercise. You can also pass the number of classes, K, to facilitate the plotting of different classes, i.e. using the function definition `plot_data(x, y, K)`. However, you can also calculate K directly from the label array y (see, e.g., the [NumPy function `unique`](https://numpy.org/devdocs/reference/generated/numpy.unique.html), or since you know that the labels are between 0 to K-1, you can use $$K = \max(y)+1$$).
 
 Using the two different functions you can generate and plot datasets with different configurations:  
-[2d_4](img/2d_4.png) [2d_5](img/2d_5.png)
+![2d_4](img/2d_4.png) ![2d_5](img/2d_5.png)
 
 
 ```python
@@ -385,17 +391,17 @@ plot_data(x, y)
 
 ### 2.5. Data transformation
 
-Define a $2\times2$ transformation matrix, W:  
+Define a $$2x2$$ transformation matrix, W:  
 `W = np.array([[0,-1],[1, 0]])`
 
-Define an output array with the same size as your data array x. Loop through your data array and transform each 2D point using the transformation matrix, $\hat{x} = Wx$. Store the result in the new array.  
+Define an output array with the same size as your data array x. Loop through your data array and transform each 2D point using the transformation matrix, $$\hat{x} = Wx$$. Store the result in the new array.  
 
-**Important note (this will be relevant in Lab 1)**: When you extract a point from your dataset, `xi = x[i,:]`, it will be a 1D array, i.e. `xi.shape: (2,)`. Depending on your NumPy version, the behavior of matrix multiplication with a 1D array is different. For more recent NumPy versions (1.16 and later), the `matmul` and `dot` functions automatically take care of this (*If the second argument is 1-D, it is promoted to a matrix by appending a 1 to its dimensions. After matrix multiplication the appended 1 is removed.* See the notes in the [documentation](https://numpy.org/doc/stable/reference/generated/numpy.matmul.html)). For previous versions, you need to manually extend the dimensionality, so that `xi.shape: (2,1)`, and you can multiply the $2\times2$ matrix with the $2\times1$ point. After transformation you need to remove the added dimension, e.g., by indexing `x[:,0]`.
+**Important note (this will be relevant in Lab 1)**: When you extract a point from your dataset, `xi = x[i,:]`, it will be a 1D array, i.e. `xi.shape: (2,)`. Depending on your NumPy version, the behavior of matrix multiplication with a 1D array is different. For more recent NumPy versions (1.16 and later), the `matmul` and `dot` functions automatically take care of this (*If the second argument is 1-D, it is promoted to a matrix by appending a 1 to its dimensions. After matrix multiplication the appended 1 is removed.* See the notes in the [documentation](https://numpy.org/doc/stable/reference/generated/numpy.matmul.html)). For previous versions, you need to manually extend the dimensionality, so that `xi.shape: (2,1)`, and you can multiply the $$2x2$$ matrix with the $$2x1$$ point. After transformation you need to remove the added dimension, e.g., by indexing `x[:,0]`.
 
 Plot the transformed array:  
-[2d_6](img/2d_6.png)
+![2d_6](img/2d_6.png)
 
-Define a function, `rotate(x, ang)`, for rotating the dataset. In the function, you define a $2\times2$ rotation matrix that rotates your data points by `ang` radians, and you return the rotated dataset. You can use the provided code below to rotate and plot the dataset. This will clear the output (`clear_output()`) for each plot, so that we get an animation of different rotations.
+Define a function, `rotate(x, ang)`, for rotating the dataset. In the function, you define a $$2x2$$ rotation matrix that rotates your data points by `ang` radians, and you return the rotated dataset. You can use the provided code below to rotate and plot the dataset. This will clear the output (`clear_output()`) for each plot, so that we get an animation of different rotations.
 
 
 ```python
@@ -445,7 +451,7 @@ Open a new python file (not a notebook) and name it "*data_generator.py*". In th
 `self.y = []`
 
 Add the `generate` and `plot_data` functions from above to your class. Make sure to modify the functions to use the class instance variables (`self.x` and `self.y`). The function `generate` creates a new dataset and stores this using the class instance variables, while `plot_data` plots these (thus, we don't need to pass x and y to this function). You should be able to run the code below and get a result similar to:  
-[2d_7](img/2d_7.png)
+![2d_7](img/2d_7.png)
 
 
 ```python
@@ -474,8 +480,8 @@ Create functions `export_data` and `import_data` that can be used to save the da
 If you want to make it more challenging, you can try to export and import the labels **y** as a plain text file. For more information on reading and writing text files, you can start by reading about this in the [Python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
 
 With your added functions, you should be able to run the below code and get something like this as output:  
-[2d_8](img/2d_8.png)
-[2d_9](img/2d_9.png)
+![2d_8](img/2d_8.png)
+![2d_9](img/2d_9.png)
 
 
 ```python
