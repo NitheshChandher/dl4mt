@@ -8,6 +8,12 @@ description: >-
 # Lab 00
 {:.no_toc}
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ---
 ![Python](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/230px-Python-logo-notext.svg.png)
 # Introduction to Python
@@ -115,10 +121,14 @@ print(square_list)
 print("\nPrime Numbers:")
 def is_prime(x):
     condition=0
-    for i in range(2,round(x/2)+1):
-        if x%i==0:
-            condition+=1
-            break
+    if x==1:
+        condition+=1
+    
+    else:
+        for i in range(2,round(x/2)+1):
+            if x%i==0:
+                condition+=1
+                break
     
     if condition>0:
         return False
@@ -129,6 +139,7 @@ for number in numbers:
     prime = is_prime(number)
     if prime:
         print(number)
+
 
 ```
 
